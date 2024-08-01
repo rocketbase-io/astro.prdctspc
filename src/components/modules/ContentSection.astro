@@ -1,53 +1,12 @@
 ---
-
-import placeholderImg from "../../pages/images/ps_logo_cloths.svg";
-import testVideo from "../../pages/videos/datenpool_filter.mp4";
-import {Image} from "astro:assets";
 interface Props {
 	description: string;
 	caption: string;
 	content: string;
 	alignRight: boolean;
-	id: string;
 }
-const { video, description, caption, content, alignRight, id } = Astro.props;
-
+const {  description, caption, content, alignRight } = Astro.props;
 ---
-
-<script>
-	var img = document.getElementById(`placeholder ${id}`);
-	var lazyContainer = document.getElementById(`lazycontainer ${id}`);
-
-	const options = {
-		root: null,
-		rootMargin: "0px",
-		threshold: 0.5 // Trigger when img is 50% visible
-	};
-
-	var observer = new IntersectionObserver(function (entries) {
-		entries.forEach(function (entry) {
-			if (entry.isIntersecting) {
-				// remove the img
-				lazyContainer.removeChild(img);
-				// create a video instead
-				const videoElement = document.createElement("video");
-				videoElement.src = video;
-				videoElement.autoplay = true;
-				videoElement.loop = true;
-				videoElement.muted = true;
-				videoElement.controls = true;
-				videoElement.preload = "none";
-				// swap it in for the img
-				lazyContainer.appendChild(videoElement);
-				// load video
-				videoElement.load();
-				// disconnect observer
-				observer.unobserve(img);
-			}
-		});
-	}, options);
-	observer.observe(img);
-</script>
 
 <div class=`flex flex-col mb-8 animated fadeIn sm:flex-row`>
 	<div class=`flex items-center mb-8 sm:w-1/2 md:w-5/12 ${alignRight ? "" : "sm:order-last"}`>
