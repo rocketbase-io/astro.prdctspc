@@ -1,0 +1,111 @@
+---
+import Layout from '../layouts/Layout.astro';
+import {Image} from "astro:assets";
+import pinImg from "./images/ps_pin.png";
+import bgImg from "./images/bg_clothes_flat.png";
+import coverImg from "./images/maschine.svg";
+import ContentSection from "../components/modules/ContentSection.astro";
+import ContentContainer from "../components/modules/ContentContainer.astro";
+---
+
+<Layout title="Pinboard">
+    <main>
+        <section class="relative bg-[#d3d0ff] tails-selected-element">
+            <div class="absolute inset-0 flex justify-end w-full h-full overflow-hidden opacity-50">
+                <Image src={bgImg} alt="bgImg" class="absolute inset-0 object-cover w-full h-full opacity-40"/>
+            </div>
+            <div class="relative flex flex-col px-16 py-16 mx-auto max-w-7xl bg-gradient-to-r lg:flex-row from-transparent via-[#f1f2ff] to-transparent">
+                <div class="relative flex flex-col w-full mb-16 lg:mb-0 lg:w-2/3 sm:justify-center sm:items-center sm:text-center lg:text-left lg:items-start">
+                    <h1 class="mb-8 text-5xl font-bold text-gray-700 sm:text-6xl lg:text-7xl">Pinboard</h1>
+                    <p class="max-w-xl mx-auto mb-8 text-gray-700 sm:text-lg lg:text-xl lg:pr-20 lg:max-w-none lg:mx-0">In den Pinboards werden neue Ideen an einem Ort digital gesammelt. Egal ob neue Inspirationen aus Online- oder Offline-Storechecks oder Produktdaten aus existierenden Systemen, mit dem Pinboard-Modul können alle Arten der Sortimentsplanung einfach umgesetzt werden.</p>
+                </div>
+                <div class="relative flex items-center justify-center w-full max-w-xl mx-auto lg:w-1/2">
+                    <Image src={coverImg} alt="cover image" class="w-full h-[300px] xl:pr-5 lg:translate-y-5"/>
+                </div>
+            </div>
+        </section>
+        <section class="py-20 bg-white">
+            <ContentContainer>
+                <ContentSection
+                    description="schnell und einfach daten anlegen"
+                    caption="Konfigurierbare Formulare"
+                    content="Mit unseren konfigurierbaren Formularen können Sie ganz einfach neue Produkte erstellen oder Produktdaten aus den existierenden PIM/PLM/ERP mit allen relevanten Informationen synchronisieren."
+                    alignRight={false}
+                >
+                    <iframe class="w-full aspect-video lazyload" data-src="https://player.vimeo.com/video/993723033?background=1" frameborder="0"></iframe>
+                </ContentSection>
+                <ContentSection
+                        description="online storechecks"
+                        caption="Browser Addon"
+                        content="Mit unserem Browser Addon können Sie bequem und effizient neue Produkte erstellen und alle relevanten Informationen wie Bilder, URL und Attribute automatisch speichern lassen. Sparen Sie Zeit und Aufwand und optimieren Sie Ihre Arbeitsabläufe mit nur wenigen Klicks."
+                        alignRight={true}
+                >
+                    <iframe class="w-full aspect-video lazyload" data-src="https://player.vimeo.com/video/993697899?background=1" frameborder="0"></iframe>
+                </ContentSection>
+                <ContentSection
+                        description="kommunikation über eine plattform"
+                        caption="Teamarbeit"
+                        content="Chatten Sie direkt am Pinboard mit Ihrem Team! Bleiben Sie stets informiert über alle Produktänderungen durch Benachrichtigungen oder Emails. Dank der Versionierung schaffen Sie Transparenz und Nachvollziehbarkeit. Mit ProductSpace wird die Zusammenarbeit im Team so einfach wie nie zuvor!"
+                        alignRight={false}
+                >
+                    <iframe class="w-full aspect-video lazyload" data-src="https://player.vimeo.com/video/993697639?background=1" frameborder="0"></iframe>
+                </ContentSection>
+                <ContentSection
+                        description="kenne deine date"
+                        caption="Individuelle Filter und Darstellungen"
+                        content="Durchsuchen Sie Ihre Daten mühelos mit einer Vielzahl von Filteroptionen, um stets den Überblick zu behalten. Filtern und gruppieren Sie Ihre Produkte nach individuellen Attributen und passen Sie die Darstellung ganz nach Ihren Bedürfnissen an."
+                        alignRight={true}
+                >
+                    <iframe class="w-full aspect-video lazyload" data-src="https://player.vimeo.com/video/993697668?background=1" frameborder="0"></iframe>
+                </ContentSection>
+                <ContentSection
+                        description="organisiere große datenmengen"
+                        caption="Bulk edit"
+                        content="Steigern Sie Ihre Produktivität und sparen Sie wertvolle Zeit, indem Sie mehrere Pins auf einmal erstellen oder bearbeiten."
+                        alignRight={false}
+                >
+                    <iframe class="w-full aspect-video lazyload" data-src="https://player.vimeo.com/video/993697874?background=1" frameborder="0"></iframe>
+                </ContentSection>
+                <ContentSection
+                        description="Upload und Rendering im Browser"
+                        caption="3D Modellierung"
+                        content="Die Zukunft im Fashion Design liegt in 3D. Viele Tools sind allerdings kostenintensiv. ProductSpace bietet eine smarte Lösung, um die 3D-Modellierung in den bestehenden digitalen Workflow zu integrieren. Visuelle Feedback-Prozesse für eine kollaborative Zusammenarbeit zwischen Designer und Einkäufer."
+                        alignRight={true}
+                >
+                    <iframe class="w-full aspect-video lazyload" data-src="https://player.vimeo.com/video/993697460?background=1" frameborder="0"></iframe>
+                </ContentSection>
+            </ContentContainer>
+        </section>
+        <section class="py-20 bg-gray-50 tails-selected-element">
+            <div class="container items-center max-w-6xl px-4 mx-auto sm:px-20 md:px-32 lg:px-16">
+                <div class="flex flex-wrap items-center -mx-3">
+                    <div class="order-1 w-full px-3 lg:w-1/2 lg:order-0">
+                        <div class="w-full lg:max-w-md">
+                            <h2 class="mb-4 text-3xl font-bold leading-tight tracking-tight sm:text-4xl font-heading">Vorteile von Pinboards</h2>
+                            <p class="mb-4 font-medium tracking-tight text-gray-400 xl:mb-6">Es war noch nie einfacher Sortimente zu planen. ProductSpace unterstützt dich bei Folgendem:</p>
+                            <ul>
+                                <li class="flex items-center py-2 space-x-4 xl:py-3">
+                                    <div class="w-8 h-8"><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="#ff5c74" viewBox="0 0 256 256"><path d="M220,32H76A20,20,0,0,0,56,52V72H36A20,20,0,0,0,16,92V204a20,20,0,0,0,20,20H180a20,20,0,0,0,20-20V184h20a20,20,0,0,0,20-20V52A20,20,0,0,0,220,32ZM176,96v16H40V96Zm0,104H40V136H176Zm40-40H200V92a20,20,0,0,0-20-20H80V56H216Z"></path></svg></div>
+                                    <span class="font-medium text-gray-500">Schnelle und effiziente Online-Storechecks durch BrowserAddon</span>
+                                </li>
+                                <li class="flex items-center py-2 space-x-4 xl:py-3">
+                                    <div class="w-8 h-8"><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="#ffd93b" viewBox="0 0 256 256"><path d="M164.38,181.1a52,52,0,1,0-72.76,0,75.89,75.89,0,0,0-30,28.89,12,12,0,0,0,20.78,12,53,53,0,0,1,91.22,0,12,12,0,1,0,20.78-12A75.89,75.89,0,0,0,164.38,181.1ZM100,144a28,28,0,1,1,28,28A28,28,0,0,1,100,144Zm147.21,9.59a12,12,0,0,1-16.81-2.39c-8.33-11.09-19.85-19.59-29.33-21.64a12,12,0,0,1-1.82-22.91,20,20,0,1,0-24.78-28.3,12,12,0,1,1-21-11.6,44,44,0,1,1,73.28,48.35,92.18,92.18,0,0,1,22.85,21.69A12,12,0,0,1,247.21,153.59Zm-192.28-24c-9.48,2.05-21,10.55-29.33,21.65A12,12,0,0,1,6.41,136.79,92.37,92.37,0,0,1,29.26,115.1a44,44,0,1,1,73.28-48.35,12,12,0,1,1-21,11.6,20,20,0,1,0-24.78,28.3,12,12,0,0,1-1.82,22.91Z"></path></svg></div>
+                                    <span class="font-medium text-gray-500"><div class="">Kollaborativ im Team an Sortimentsideen arbeiten</div></span>
+                                </li>
+                                <li class="flex items-center py-2 space-x-4 xl:py-3">
+                                    <div class="w-8 h-8"><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="#A0D7FF" viewBox="0 0 256 256"><path d="M208,36H48A28,28,0,0,0,20,64V176a28,28,0,0,0,28,28H208a28,28,0,0,0,28-28V64A28,28,0,0,0,208,36Zm4,140a4,4,0,0,1-4,4H48a4,4,0,0,1-4-4V64a4,4,0,0,1,4-4H208a4,4,0,0,1,4,4Zm-40,52a12,12,0,0,1-12,12H96a12,12,0,0,1,0-24h64A12,12,0,0,1,172,228Z"></path></svg></div>
+                                    <span class="font-medium text-gray-500">Individuelle Ansichten für z.B. Sortimentsgespräche (Wegfall von PowerPoints o.ä.)</span>
+                                </li>
+                                <li class="flex items-center py-2 space-x-4 xl:py-3">
+                                    <div class="w-8 h-8"><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="#6f82ba" viewBox="0 0 256 256"><path d="M196,35.52C177.62,25.51,153.48,20,128,20S78.38,25.51,60,35.52C39.37,46.79,28,62.58,28,80v96c0,17.42,11.37,33.21,32,44.48,18.35,10,42.49,15.52,68,15.52s49.62-5.51,68-15.52c20.66-11.27,32-27.06,32-44.48V80C228,62.58,216.63,46.79,196,35.52ZM204,128c0,17-31.21,36-76,36s-76-19-76-36v-8.46a88.9,88.9,0,0,0,8,4.94c18.35,10,42.49,15.52,68,15.52s49.62-5.51,68-15.52a88.9,88.9,0,0,0,8-4.94ZM128,44c44.79,0,76,19,76,36s-31.21,36-76,36S52,97,52,80,83.21,44,128,44Zm0,168c-44.79,0-76-19-76-36v-8.46a88.9,88.9,0,0,0,8,4.94c18.35,10,42.49,15.52,68,15.52s49.62-5.51,68-15.52a88.9,88.9,0,0,0,8-4.94V176C204,193,172.79,212,128,212Z"></path></svg></div>
+                                    <span class="font-medium text-gray-500">Integration ins ERP/PIM<br></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-full px-3 mb-12 lg:w-1/2 order-0 lg:order-1 lg:mb-0"><Image class="mx-auto sm:max-w-sm lg:max-w-full xl:px-10" src={pinImg} alt="feature image"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</Layout>

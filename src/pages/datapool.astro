@@ -1,0 +1,95 @@
+---
+import Layout from '../layouts/Layout.astro';
+import img from "./images/datapool.png";
+import coverImg from "./images/illu-person-looking-through-a-telescope.svg";
+import {Image} from "astro:assets";
+import bgImg from "./images/bg_clothes_flat.png";
+import ContentSection from "../components/modules/ContentSection.astro";
+import ContentContainer from "../components/modules/ContentContainer.astro";
+---
+
+<Layout title="Datapool">
+    <main>
+        <section class="relative bg-[#fff0b3] tails-selected-element">
+            <div class="absolute inset-0 flex justify-end w-full h-full overflow-hidden opacity-50">
+                <Image src={bgImg} alt="bgImg" class="absolute inset-0 object-cover w-full h-full opacity-40"/>
+            </div>
+            <div class="relative flex flex-col px-16 py-16 mx-auto max-w-7xl bg-gradient-to-r lg:flex-row from-transparent via-[#fff0b4] to-transparent">
+                <div class="relative flex flex-col w-full mb-16 lg:mb-0 lg:w-2/3 sm:justify-center sm:items-center sm:text-center lg:text-left lg:items-start">
+                    <h1 class="mb-8 text-5xl font-bold text-gray-700 sm:text-6xl lg:text-7xl">Datapool</h1>
+                    <p class="max-w-xl mx-auto mb-8 text-gray-700 sm:text-lg lg:text-xl lg:pr-20 lg:max-w-none lg:mx-0">Angebunden an Ihre Folgesystem können Sie Ihre Produktdaten individuell Betrachten und Analysieren. Soviel flexibiltät in der Datstellung sind einmalig. Ad-hoc Reports und Präsentationen sind jederzeit möglich.</p>
+                </div>
+                <div class="relative flex items-center justify-center w-full max-w-xl mx-auto lg:w-1/2">
+                    <Image src={coverImg} alt="cover image" class="w-full h-[300px] xl:pr-5 lg:translate-y-5"/>
+                </div>
+            </div>
+        </section>
+        <section class="py-20 bg-white tails-selected-element">
+            <ContentContainer>
+                <ContentSection
+                        description="auf ihre bedürnisse angepasst"
+                        caption="Individuelle Ansichten"
+                        content="Mit der Möglichkeit, zwischen Karten-, Tabellen- und Listenansicht zu wechseln, können Sie Ihre Daten ganz nach Ihren Wünschen organisieren. Passen Sie die Größe der Bilder, die Sortierung und die angezeigten Informationen individuell an, um ein personalisiertes Erlebnis zu schaffen. Mit der Möglichkeit, verschiedene Ansichts- und Filterkonfigurationen zu speichern, können Sie mühelos zwischen verschiedenen Kontexten hin- und herwechseln."
+                        alignRight={false}
+                >
+                    <iframe class="w-full aspect-video lazyload" data-src="https://player.vimeo.com/video/993697549?background=1" frameborder="0"></iframe>
+                </ContentSection>
+                <ContentSection
+                        description="durchleuchten sie ihre daten"
+                        caption="Umfangreiche Filtermöglichkeiten"
+                        content="Durchleuchten Sie Ihre Daten nach Ihren individuellen Vorstellungen – sei es Freitext, Datum oder Zahlenbereich. Mit unseren Filtern ist das alles und noch viel mehr möglich. Finden Sie mühelos alle Attribute, die mit Ihren Daten verknüpft sind und beantworten Sie schnell komplexe Fragestellungen wie zum Beispiel die Zusammenstellung Ihres Sortiments in einer bestimmten Farbe zu bestimmten Preisen. Mit unseren Filtern sind zahlreiche Analysemöglichkeiten möglich, um Ihre Daten optimal zu nutzen."
+                        alignRight={true}
+                >
+                    <iframe class="w-full aspect-video lazyload" data-src="https://player.vimeo.com/video/993697600?background=1" frameborder="0"></iframe>
+                </ContentSection>
+                <ContentSection
+                        description="schnell und unkompliziert"
+                        caption="Daten exportieren"
+                        content="Mit unserem umfangreichen Filtern können Sie ganz einfach Ihre gewünschten Daten zusammenstellen. Nutzen Sie entweder ihre gespeicherten Filtereinstellungen oder erstellen Sie Neue, um genau die Informationen zu erhalten, die Sie benötigen. Exportieren Sie dann große Mengen an Daten schnell und unkompliziert, um Ihre Analysen und Berichte zu optimieren"
+                        alignRight={false}
+                >
+                    <iframe class="w-full aspect-video lazyload" data-src="https://player.vimeo.com/video/993697584?background=1" frameborder="0"></iframe>
+                </ContentSection>
+                <ContentSection
+                        description="Aktuelle Daten"
+                        caption="Immer auf dem neuesten stand"
+                        content="Durch die Integration in Ihre Folgesysteme bleiben Ihre Daten immer aktuell. Filter und Daten lassen sich automatisch akutalisieren und einfach neu generieren."
+                        alignRight={true}
+                >
+                    <!--<video class="rounded-lg shadow-xl tails-selected-element" autoplay muted loop src={filterVideo}/>-->
+                </ContentSection>
+            </ContentContainer>
+        </section>
+        <section class="py-20 bg-gray-50 tails-selected-element">
+            <div class="container items-center max-w-6xl px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
+                <div class="flex flex-wrap items-center -mx-3">
+                    <div class="order-1 w-full px-3 lg:w-1/2 lg:order-0">
+                        <div class="w-full lg:max-w-md">
+                            <h2 class="mb-4 text-3xl font-bold leading-tight tracking-tight sm:text-4xl font-heading">Vorteile vom Datapool</h2>
+                            <!--<p class="mb-4 font-medium tracking-tight text-gray-400 xl:mb-6">Es war noch nie einfacher Sortimente zu planen. ProductSpace unterstützt dich bei Folgendem:</p>-->
+                            <ul>
+                                <li class="flex items-center py-2 space-x-4 xl:py-3">
+                                    <div class="w-8 h-8"><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="#ff5c74" viewBox="0 0 256 256"><path d="M224,196h-4V40a12,12,0,0,0-12-12H152a12,12,0,0,0-12,12V76H96A12,12,0,0,0,84,88v36H48a12,12,0,0,0-12,12v60H32a12,12,0,0,0,0,24H224a12,12,0,0,0,0-24ZM164,52h32V196H164Zm-56,48h32v96H108ZM60,148H84v48H60Z"></path></svg></div>
+                                    <span class="font-medium text-gray-500">Vielfältige Analysemöglichkeiten</span>
+                                </li>
+                                <li class="flex items-center py-2 space-x-4 xl:py-3">
+                                    <div class="w-8 h-8"><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="#ffd93b" viewBox="0 0 256 256"><path d="M137,168l11.52-11.51a12,12,0,0,0-17-17L120,151l-15-15,11.52-11.51a12,12,0,0,0-17-17L88,119,72.49,103.51a12,12,0,0,0-17,17L59,124,38.54,144.49a36,36,0,0,0,0,50.91l2.55,2.54L15.51,223.51a12,12,0,0,0,17,17l25.57-25.58,2.54,2.55a36.06,36.06,0,0,0,50.91,0L132,197l3.51,3.52a12,12,0,0,0,17-17ZM94.54,200.49a12,12,0,0,1-17,0L55.51,178.43a12,12,0,0,1,0-17L76,141l39,39Zm146-185a12,12,0,0,0-17,0L197.94,41.09l-2.54-2.55a36.05,36.05,0,0,0-50.91,0L124,59l-3.51-3.52a12,12,0,0,0-17,17l80,80a12,12,0,0,0,17-17L197,132l20.49-20.49a36,36,0,0,0,0-50.91l-2.55-2.54,25.58-25.57A12,12,0,0,0,240.49,15.51Zm-40,79L180,115,141,76l20.49-20.49a12,12,0,0,1,17,0l22.06,22.06a12,12,0,0,1,0,17Z"></path></svg></div>
+                                    <span class="font-medium text-gray-500"><div class="">Integration in Folgesysteme</div></span>
+                                </li>
+                                <li class="flex items-center py-2 space-x-4 xl:py-3">
+                                    <div class="w-8 h-8"><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="#A0D7FF" viewBox="0 0 256 256"><path d="M200,164v8h12a12,12,0,0,1,0,24H200v12a12,12,0,0,1-24,0V152a12,12,0,0,1,12-12h32a12,12,0,0,1,0,24ZM92,172a32,32,0,0,1-32,32H56v4a12,12,0,0,1-24,0V152a12,12,0,0,1,12-12H60A32,32,0,0,1,92,172Zm-24,0a8,8,0,0,0-8-8H56v16h4A8,8,0,0,0,68,172Zm100,8a40,40,0,0,1-40,40H112a12,12,0,0,1-12-12V152a12,12,0,0,1,12-12h16A40,40,0,0,1,168,180Zm-24,0a16,16,0,0,0-16-16h-4v32h4A16,16,0,0,0,144,180ZM36,108V40A20,20,0,0,1,56,20h96a12,12,0,0,1,8.49,3.52l56,56A12,12,0,0,1,220,88v20a12,12,0,0,1-24,0v-4H148a12,12,0,0,1-12-12V44H60v64a12,12,0,0,1-24,0ZM160,57V80h23Z"></path></svg></div>
+                                    <span class="font-medium text-gray-500">Export großer Datenmengen</span>
+                                </li>
+                                <li class="flex items-center py-2 space-x-4 xl:py-3">
+                                    <div class="w-8 h-8"><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="#6f82ba" viewBox="0 0 256 256"><path d="M232.49,215.51,185,168a92.12,92.12,0,1,0-17,17l47.53,47.54a12,12,0,0,0,17-17ZM44,112a68,68,0,1,1,68,68A68.07,68.07,0,0,1,44,112Z"></path></svg></div>
+                                    <span class="font-medium text-gray-500">Umfangreiche Filter<br></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-full px-3 mb-12 lg:w-1/2 order-0 lg:order-1 lg:mb-0"><Image class="mx-auto sm:max-w-sm lg:max-w-full xl:px-10" src={img} alt="feature image"/></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</Layout>

@@ -1,0 +1,84 @@
+---
+import Layout from '../layouts/Layout.astro';
+import {Image} from "astro:assets";
+import showroomImg from "./images/showroom.png";
+import commentImg from "./images/pin_comment.png";
+import earthImg from "./images/earth.svg";
+import bgImg from "./images/bg_clothes_flat.png";
+import ContentSection from "../components/modules/ContentSection.astro";
+import ContentContainer from "../components/modules/ContentContainer.astro";
+---
+
+<Layout title="Showroom">
+    <main>
+        <section class="relative bg-[#eedcfb] tails-selected-element">
+            <div class="absolute inset-0 flex justify-end w-full overflow-hidden opacity-50">
+                <Image src={bgImg} alt="bgImg" class="absolute inset-0 object-cover w-full h-full opacity-40"/>
+            </div>
+            <div class="relative flex flex-col px-16 py-16 mx-auto max-w-7xl bg-gradient-to-r lg:flex-row from-transparent via-[#f3edfa] to-transparent">
+                <div class="relative flex flex-col w-full mb-16 lg:mb-0 lg:w-2/3 sm:justify-center sm:items-center sm:text-center lg:text-left lg:items-start">
+                    <h1 class="mb-8 text-5xl font-bold text-gray-700 sm:text-6xl lg:text-7xl">Showroom</h1>
+                    <p class="max-w-xl mx-auto mb-8 text-gray-700 sm:text-lg lg:text-xl lg:pr-20 lg:max-w-none lg:mx-0">Ein digitaler Platz für Sortimentsvorschläge von Lieferanten und Partner. Individuelle Datenstrukturen, welche auf ihre Folgesysteme passen. Keine Emails mehr mit Excel o. PowerPoint Dokumenten...</p>
+                </div>
+                <div class="relative flex items-center justify-center w-full max-w-xl mx-auto lg:w-1/2">
+                    <Image src={earthImg} alt="cover image" class="w-full h-[300px] xl:pr-5 lg:translate-y-5"/>
+                </div>
+            </div>
+        </section>
+        <section class="py-20 bg-white tails-selected-element">
+            <ContentContainer>
+                <ContentSection
+                        description="Bereich für lieferanten"
+                        caption="Lieferanten präsentieren ihre Produkte"
+                        content="In ProductSpace können Product Manager oder Agenturen Design Briefings erstellen und erhalten. Damit Missverständnisse gar nicht erst passieren, lassen sich die Dokumente mit den visuellen Inspirationen der Style Boards verknüpfen. Zusätzliche Medienablagen und geteilte Verzeichnisse? Überflüssig"
+                        alignRight={false}
+                >
+                    <iframe class="w-full aspect-video lazyload" data-src="https://player.vimeo.com/video/993697986?background=1" frameborder="0"></iframe>
+                </ContentSection>
+                <ContentSection
+                        description="Struktur und ordnung"
+                        caption="Flexibler Formular-Aufbau"
+                        content="Erhalten Sie Angebote von Partnern oder Lieferanten in strukturierter Form. Dadurch können Sie Angebote schnell und einfach vergleichen. Schluss mit der Informationsflut - lassen Sie uns Ihnen helfen, Ordnung in Ihre Angebote zu bringen!"
+                        alignRight={true}
+                >
+                    <iframe class="w-full aspect-video lazyload" data-src="https://player.vimeo.com/video/993697950?background=1" frameborder="0"></iframe>
+                </ContentSection>
+                <ContentSection
+                        description="direktert austausch"
+                        caption="Kommunikation direkt an den Produkten"
+                        content="An den einzelnen Produkten können Sie direkt mit den Lieferanten in Kontakt treten, um Fragen zu stellen und Änderungswünsche zu äußern. Durch die Möglichkeit, Bilder oder Attachments anzuhängen, wird die Kommunikation noch einfacher und effektiver. Nutzen Sie diese Funktionen, um Ihre Anforderungen klar und verständlich zu kommunizieren und eine reibungslose Zusammenarbeit zu gewährleisten."
+                        alignRight={false}
+                >
+                    <Image class="rounded-lg shadow-xl" src={commentImg} alt="" data-rounded="rounded-lg" data-rounded-max="rounded-full"/>
+                </ContentSection>
+            </ContentContainer>
+        </section>
+        <section class="py-20 bg-gray-50 tails-selected-element">
+            <div class="container items-center max-w-6xl px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
+                <div class="flex flex-wrap items-center -mx-3">
+                    <div class="order-1 w-full px-3 lg:w-1/2 lg:order-0">
+                        <div class="w-full lg:max-w-md">
+                            <h2 class="mb-4 text-3xl font-bold leading-tight tracking-tight sm:text-4xl font-heading">Vorteile von Showrooms</h2>
+                            <p class="mb-4 font-medium tracking-tight text-gray-400 xl:mb-6">Es war noch nie einfacher Sortimente zu planen. ProductSpace unterstützt dich bei Folgendem:</p>
+                            <ul>
+                                <li class="flex items-center py-2 space-x-4 xl:py-3">
+                                    <div class="w-8 h-8"><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="#ff5c74" viewBox="0 0 256 256"><path d="M222.14,105.85l-80-80a20,20,0,0,0-28.28,0l-80,80A19.86,19.86,0,0,0,28,120v96a12,12,0,0,0,12,12h64a12,12,0,0,0,12-12V164h24v52a12,12,0,0,0,12,12h64a12,12,0,0,0,12-12V120A19.86,19.86,0,0,0,222.14,105.85ZM204,204H164V152a12,12,0,0,0-12-12H104a12,12,0,0,0-12,12v52H52V121.65l76-76,76,76Z"></path></svg></div>
+                                    <span class="font-medium text-gray-500">Alle Lieferanten Angebote an einem Ort</span>
+                                </li>
+                                <li class="flex items-center py-2 space-x-4 xl:py-3">
+                                    <div class="w-8 h-8"><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="#ffd93b" viewBox="0 0 256 256"><path d="M232.49,215.51,185,168a92.12,92.12,0,1,0-17,17l47.53,47.54a12,12,0,0,0,17-17ZM44,112a68,68,0,1,1,68,68A68.07,68.07,0,0,1,44,112Z"></path></svg></div>
+                                    <span class="font-medium text-gray-500"><div class="">Erleichtert Vergleiche und Suche von Angeboten</div></span>
+                                </li>
+                                <li class="flex items-center py-2 space-x-4 xl:py-3">
+                                    <div class="w-8 h-8"><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="#6f82ba" viewBox="0 0 256 256"><path d="M216,76H188V48a20,20,0,0,0-20-20H40A20,20,0,0,0,20,48V176a12,12,0,0,0,19.54,9.33l28.46-23V184a20,20,0,0,0,20,20h92.17l36.29,29.33A12,12,0,0,0,236,224V96A20,20,0,0,0,216,76ZM44,150.87V52H164v80H71.58A12,12,0,0,0,64,134.67Zm168,48-20-16.2a12,12,0,0,0-7.54-2.67H92V156h76a20,20,0,0,0,20-20V100h24Z"></path></svg></div>
+                                    <span class="font-medium text-gray-500">Direkte Kommunikation zu den Lieferanten</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-full px-3 mb-12 lg:w-1/2 order-0 lg:order-1 lg:mb-0"><Image class="mx-auto sm:max-w-sm lg:max-w-full xl:px-10" src={showroomImg} alt="feature image"/></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</Layout>
