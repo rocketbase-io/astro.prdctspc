@@ -5,6 +5,8 @@ import briefingImg from "./images/briefing.png";
 import clothesImg from "./images/clothes.svg";
 import {Image} from "astro:assets";
 import bgImg from "./images/bg_clothes_flat.png";
+import historyImg from "./images/pin_history.png";
+import briefingInfoImg from "./images/briefing_info.png";
 import ContentSection from "../components/modules/ContentSection.astro";
 import ContentContainer from "../components/modules/ContentContainer.astro";
 ---
@@ -41,7 +43,7 @@ import ContentContainer from "../components/modules/ContentContainer.astro";
                         content="Holen Sie gleichzeitig Angebote von mehreren Lieferanten ein, ohne dass diese sich gegenseitig sehen können. So erhalten Sie transparente Vergleichsmöglichkeiten und können direkt mit den Lieferanten in Kontakt treten, um Änderungen anzufordern, Vorverhandlungen zu führen und vieles mehr. Finden Sie spielend leicht das beste Angebot für Ihre Bedürfnisse."
                         alignRight={true}
                 >
-                    <!--<video class="rounded-lg shadow-xl tails-selected-element" autoplay muted loop src={briefingAnnotationVideo}/>-->
+                    <Image class="rounded-lg shadow-xl" src={briefingInfoImg} alt="" data-rounded="rounded-lg" data-rounded-max="rounded-full"/>
                 </ContentSection>
                 <ContentSection
                         description="übersichtliche versionierung"
@@ -49,7 +51,7 @@ import ContentContainer from "../components/modules/ContentContainer.astro";
                         content="Dank der Versionierungsfunktion können Sie problemlos Vorher- und Nachher-Vergleiche durchführen, Feedback nachvollziehen und stets den Überblick über alle Änderungen an Ihrem Angebot behalten."
                         alignRight={false}
                 >
-                    <!--<video class="rounded-lg shadow-xl tails-selected-element" autoplay muted loop src={briefingCreateVideo}/>-->
+                    <Image class="rounded-lg shadow-xl" src={historyImg} alt="" data-rounded="rounded-lg" data-rounded-max="rounded-full"/>
                 </ContentSection>
                 <ContentSection
                         description="Bilder annotation"

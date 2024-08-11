@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/Layout.astro';
+import {Image} from "astro:assets";
+import bonprixLogo from "./images/bonprix_logo.svg";
+import kontaktImg from "./images/kontakt/kontakt.jpg";
+
+---
+
+<Layout title="Kontakt">
+    <main>
+        <section class="h-auto bg-white tails-selected-element">
+            <div class="px-10 pt-24 pb-6 mx-auto max-w-7xl">
+                <div class="w-full mx-auto text-left md:text-center">
+                    <h1 class="mb-6 text-3xl font-extrabold leading-none max-w-5xl mx-auto tracking-normal text-[#6f82ba] sm:text-4xl md:text-5xl lg:text-6xl md:tracking-tight">Noch offene Fragen?</h1>
+                    <p class="px-0 mb-2 text-lg text-gray-600 md:text-xl lg:px-24">Kontaktieren Sie uns bei allgemeinen Fragen <span class="text-[#6f82ba] font-bold">direkt</span>,</p>
+                    <p class="px-0 mb-6 text-lg text-gray-600 md:text-xl lg:px-24">oder fragen Sie eine <span class="text-[#6f82ba] font-bold">Produktvorstellung (Demo)</span> an.</p>
+                </div>
+            </div>
+
+            <section class="relative bg-white h-full py-10 xl:py-20 px-10 tails-selected-element">
+                <div class="max-w-5xl px-5 bg-gray-100 py-5 rounded-3xl mx-auto">
+                    <div class="flex flex-wrap items-center">
+                        <div class="relative w-full lg:w-5/12 order-last lg:order-first p-6">
+                            <Image class="mx-auto h-full w-full lg:max-w-none md:max-w-md max-w-none object-cover rounded-xl" alt="testimonial image" src={kontaktImg}/>
+                        </div>
+                        <div class="w-full lg:w-7/12 px-4 pb-6 pt-5 lg:pt-0">
+                            <div class="max-w-xl lg:ml-auto flex flex-col gap-4">
+                                <h2 class="mb-7 text-2xl md:text-3xl font-bold leading-tight">RocketBase software productions GmbH</h2>
+                                <div class="flex flex-row items-center gap-2 text-lg md:text-xl"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#6f82ba" viewBox="0 0 256 256"><path d="M224,44H32A12,12,0,0,0,20,56V192a20,20,0,0,0,20,20H216a20,20,0,0,0,20-20V56A12,12,0,0,0,224,44Zm-96,83.72L62.85,68h130.3ZM92.79,128,44,172.72V83.28Zm17.76,16.28,9.34,8.57a12,12,0,0,0,16.22,0l9.34-8.57L193.15,188H62.85ZM163.21,128,212,83.28v89.44Z"></path></svg>
+                                    <a href="mailto:info@productspace.io?subject=Anfrage%20PLM%20ProductSpace">
+                                    info@productspace.io</a></div>
+                                <div class="flex flex-row items-center gap-2 text-lg md:text-xl"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#6f82ba" viewBox="0 0 256 256"><path d="M224,154.8l-47.09-21.11-.18-.08a19.94,19.94,0,0,0-19,1.75,13.08,13.08,0,0,0-1.12.84l-22.31,19c-13-7.05-26.43-20.37-33.49-33.21l19.06-22.66a11.76,11.76,0,0,0,.85-1.15,20,20,0,0,0,1.66-18.83,1.42,1.42,0,0,1-.08-.18L101.2,32A20.06,20.06,0,0,0,80.42,20.15,60.27,60.27,0,0,0,28,80c0,81.61,66.39,148,148,148a60.27,60.27,0,0,0,59.85-52.42A20.06,20.06,0,0,0,224,154.8ZM176,204A124.15,124.15,0,0,1,52,80,36.29,36.29,0,0,1,80.48,44.46l18.82,42L80.14,109.28a12,12,0,0,0-.86,1.16A20,20,0,0,0,78,130.08c9.42,19.28,28.83,38.56,48.31,48A20,20,0,0,0,146,176.63a11.63,11.63,0,0,0,1.11-.85l22.43-19.07,42,18.81A36.29,36.29,0,0,1,176,204Z"></path></svg>
+                                    <a href="tel:+4940605338840">+49 40 605 3388 40</a></div>
+                                <div class="flex flex-row items-center gap-2 text-lg md:text-xl"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#6f82ba" viewBox="0 0 256 256"><path d="M208,28H188V24a12,12,0,0,0-24,0v4H92V24a12,12,0,0,0-24,0v4H48A20,20,0,0,0,28,48V208a20,20,0,0,0,20,20H208a20,20,0,0,0,20-20V48A20,20,0,0,0,208,28ZM68,52a12,12,0,0,0,24,0h72a12,12,0,0,0,24,0h16V76H52V52ZM52,204V100H204V204Zm92-76a16,16,0,1,1-16-16A16,16,0,0,1,144,128Zm48,0a16,16,0,1,1-16-16A16,16,0,0,1,192,128ZM96,176a16,16,0,1,1-16-16A16,16,0,0,1,96,176Zm48,0a16,16,0,1,1-16-16A16,16,0,0,1,144,176Zm48,0a16,16,0,1,1-16-16A16,16,0,0,1,192,176Z"></path></svg>
+                                    <a target="_blank" class="underline" href="https://calendly.com/rocketbase-marten/productspace-intro">
+                                    Demo buchen</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </section>
+    </main>
+</Layout>
