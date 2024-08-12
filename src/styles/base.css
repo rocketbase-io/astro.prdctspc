@@ -12,6 +12,7 @@
             url("/fonts/latinotype_-_mohr_light-webfont.woff") format("woff");
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: "Latinotype Mohr";
@@ -20,6 +21,7 @@
             url("/fonts/latinotype_-_mohr_regular-webfont.woff") format("woff");
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: "Latinotype Mohr";
@@ -28,6 +30,7 @@
             url("/fonts/latinotype_-_mohr_semibold-webfont.woff") format("woff");
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
 }
 
 /* Mohr Italic */
@@ -38,6 +41,7 @@
             url("/fonts/latinotype_-_mohr_light_it-webfont.woff") format("woff");
     font-weight: 300;
     font-style: italic;
+    font-display: swap;
 }
 @font-face {
     font-family: "Latinotype Mohr";
@@ -46,6 +50,7 @@
             url("/fonts/latinotype_-_mohr_regular_it-webfont.woff") format("woff");
     font-weight: 400;
     font-style: italic;
+    font-display: swap;
 }
 @font-face {
     font-family: "Latinotype Mohr";
@@ -54,6 +59,7 @@
             url("/fonts/latinotype_-_mohr_semibold_it-webfont.woff") format("woff");
     font-weight: 700;
     font-style: italic;
+    font-display: swap;
 }
 
 /* Mohr Alt */
@@ -64,6 +70,7 @@
             url("/fonts/latinotype_-_mohr_alt_regular-webfont.woff") format("woff");
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: "Latinotype Mohr Alt";
@@ -72,6 +79,7 @@
             url("/fonts/latinotype_-_mohr_alt_bold-webfont.woff") format("woff");
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: "Latinotype Mohr Alt";
@@ -80,4 +88,5 @@
             url("/fonts/latinotype_-_mohr_alt_light-webfont.woff") format("woff");
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
