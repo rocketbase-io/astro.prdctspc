@@ -4,6 +4,8 @@ import mdx from "@astrojs/mdx";
 import sitemap from '@astrojs/sitemap';
 import alpinejs from "@astrojs/alpinejs";
 
+import { customOgMediaLayout } from "./src/layouts/custom-og-media-layout.tsx";
+
 import opengraphImages, {presets} from "astro-opengraph-images";
 
 import * as fs from "node:fs";
@@ -25,7 +27,7 @@ export default defineConfig({
           },
         ],
       },
-      render: presets.blackAndWhite,
+      render: customOgMediaLayout,
     }),
   ],
   i18n: {
